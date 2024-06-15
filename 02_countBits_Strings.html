@@ -1,0 +1,22 @@
+<script>
+function countBits(n) {
+
+  let binaryForm = n.toString(2);
+
+  let count = 0;
+
+  for (let i = 0; i < binaryForm.length; i++) {
+    if (binaryForm[i] === '1') {
+      count++;
+    }
+  }
+
+  return count;
+}
+
+
+console.log(countBits(1234)); 
+
+
+
+</script>
