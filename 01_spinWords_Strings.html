@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  </html>
+
+<script>
+  function spinWords(string) {
+
+    string = string.trim();
+
+    let words = string.split(" ");
+
+    for (let i = 0; i < words.length; i++) {
+
+      if (words[i].length >= 5) {
+
+        let word = words[i].split("");
+        word.reverse();
+        words[i] = word.join("");
+    }
+
+
+    return words.join(" ");
+  }
+
+  console.log(spinWords("Hey fellow warriors.")); 
+  console.log(spinWords("This is a test"));
+  console.log(spinWords("This is another test"));
+}
+</script>
